@@ -49,3 +49,15 @@ if (document.getElementById("texto").value.length != 0){
     alert("Ingresa algun texto");
 }
 }
+
+function copiar() {
+    let textarea = document.getElementById("texto");
+    let texto = textarea.value;
+    navigator.clipboard.writeText(texto)
+    .then(() => {
+        alert("Texto copiado");
+    })
+    . catch(err => {
+        console.error("Error al copiar" + err);
+    });
+}
