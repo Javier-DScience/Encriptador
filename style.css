@@ -154,3 +154,10 @@
     text-align: center;
     color: #495057;
 }
+
+.encriptado img {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+}
